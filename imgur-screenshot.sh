@@ -32,8 +32,8 @@ if is_mac; then
   screenshot_window_command="screencapture -iWa %img"
   open_command="open %url"
 else
-  screenshot_select_command="scrot -s %img"
-  screenshot_window_command="scrot %img"
+  screenshot_select_command="gnome-screenshot -a -f %img"
+  screenshot_window_command="gnome-screenshot -f %img"
   open_command="xdg-open %url"
 fi
 open="true"
